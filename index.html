@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proventus IT</title>
+
+    <link rel="icon" href="https://html5rocket.github.io/assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600,700,900" rel="stylesheet"></head>
+<body>
+
+    <nav>
+        <a href="index.html"> <img class="logo" src="./assets/img/companyLogo.png"> </a>
+        <button class="menuButton">
+            <svg class="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+            <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" /></svg>
+        </button>
+        <ul>
+            <a class="scrollLink" scrolllink="#about">Over Proventus</a>
+            <a class="scrollLink" scrolllink="#vision">Een visie</a>
+            <a class="scrollLink" scrolllink="#contact">Contact</a>
+        </ul>
+    </nav>
+    <header id="header">
+        <h1>
+            <span style="color: #FD3C42">IT</span> is our specialty
+            <br>
+            <span class="txt-type" data-wait="3000" data-words='["We have IT.", "We create IT.", "We do IT."]'></span>
+        </h1>
+    </header>
+
+    <a class="scrollLink" scrolllink="#about">
+        <div class="arrow animated bounce"></div>
+    </a>
+
+    <section id="about">
+    </section>
+
+    <section id="vision">
+        <div id="about">
+
+            <br />
+            <br />
+            <p>
+                <span style="font-size: 40px; line-height: 80px; font-weight: 600; line-height: 50px;">Voor al je <span style="color: #FD3C42">IT</span> behoeftes</span><br /><br />
+                Proventus is een IT consultancy bureau gespecialiseerd in software development en web design<br />
+                Voor al je IT behoeftes van A tot Z<br /><br />
+
+                Ervaren in verschillende digitale en creative omgevingen - met een sterke technische achtergrond<br />
+                leggen we aan de hand van een vrijblijvend gesprek onze basis en vinden we een gepaste oplossing<br />
+                Contacteer mij nu vrijblijvend via <a href="mailto:contact@example.com">hello@proventus.be</a>!
+            </p>
+        </div>
+
+
+        <div class="row">
+            
+        </div>
+    </section>
+    <section id="contact">
+        <div class="separated">
+            <h1 class="headerLineLeft">Contact</h1>
+            <br />
+                <div class="contactUs">
+                    <ul class="contactInfo">
+                        <li class="contactTitle">
+                                <i class="fa-solid fa-phone fa-xl"></i> &nbsp; Telefoon<br /><br />
+                                <span class="contactDetails">+32 487 40 64 43</span>
+                        </li>
+                        <li class="contactTitle">
+                                <i class="fa-solid fa-envelope fa-xl"></i> &nbsp; Email <br /><br />
+                                <span class="contactDetails"><a href="mailto:hello@proventus.be" target="_top">hello@proventus.be</a></span>
+                        </li>
+                        <li class="contactTitle">
+                            <i class="fa-solid fa-location-arrow fa-xl"></i> &nbsp; Adres<br /><br />
+                            <span class="contactDetails">
+                                <span style="font-weight: bold;">Proventus</span> <br />
+                                Molenput 11 <br />
+                                8520 Kuurne
+                            </span>
+                        </li>
+                        <li class="contactTitle">
+                            <i class="fa-regular fa-address-card fa-xl"></i> &nbsp; Onderneming<br /><br />
+                            <span class="contactDetails">
+                                BTW BE 0763.937.554 <br />
+                                IBAN BE76 0634 1359 4695 <br />
+                                <a href="index.html">www.proventus.be</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h3 class="contactFormTitle">Contacteer ons!</h3>
+                        <input type="text" id="name" placeholder="* Naam" required />
+                        <input type="email" id="email" placeholder="* Email" required />
+                        <input type="text" id="phone" placeholder="   Telefoon" />
+                        <select id="cars" name="cars" placeholder="Ik wens info over">
+                            <option value="" disabled selected>* Meer informatie over...</option>
+                            <option value="Webdev">Ontwikkelen nieuwe website</option>
+                            <option value="Appdev">Ontwikkelen nieuwe applicatie</option>
+                            <option value="dev">Onderhoud of bijkomstige ontwikkelingen</option>
+                            <option value="marketing">Online marketingcampagne</option>
+                            <option value="hosting">Emails en webhosting</option>
+                            <option value="gaming">Hardware / Gaming</option>
+                        </select>
+                        <textarea id="message" rows="4" placeholder="..."></textarea>
+                        <button type="submit">Verzend</button>
+                    </form>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">&copy; 2022 Proventus</p>
+    </footer>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://kit.fontawesome.com/9ec55b6b03.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script>
+        //show hide company logo
+        var initialSrc = "./assets/img/companyLogo.png";
+        var scrollSrc = "./assets/img/companyLogoNav.png";
+
+        $(window).scroll(function () {
+            var value = $(this).scrollTop();
+            if (value > 100)
+                $(".logo").attr("src", scrollSrc);
+            else
+                $(".logo").attr("src", initialSrc);
+        });
+
+        window.onscroll = checkNavClassNameHeaderType;
+        window.onload = checkNavClassNameHeaderType;
+
+        function checkNavClassNameHeaderType() {
+            if (document.getElementsByTagName("html")[0].scrollTop > 0) {
+                $("nav").addClass("nonTopNav");
+            } else {
+                $("nav").removeClass("nonTopNav");;
+            }
+        }
+        //mobile button
+        $("nav button.menuButton").on("click", function () {
+            $("body").toggleClass("activeNavLinks");
+        });
+
+        // Scroll Link Functionality
+        $(".scrollLink").on("click", function () {
+            $("body").removeClass("activeNavLinks");
+            var scrollTo = this.getAttribute("scrolllink");
+            if (window.innerWidth <= 500) {
+                $('html, body').animate({ scrollTop: $(scrollTo).offset().top - 65 }, 600, 'easeInOutExpo');
+            } else {
+                $('html, body').animate({ scrollTop: $(scrollTo).offset().top - 50 }, 600, 'easeInOutExpo');
+            }
+        });
+
+        //typewriter effect
+        class TypeWriter {
+            constructor(txtElement, words, wait = 3000) {
+                this.txtElement = txtElement;
+                this.words = words;
+                this.txt = "";
+                this.wordIndex = 0;
+                this.wait = parseInt(wait, 10);
+                this.type();
+                this.isDeleting = false;
+            }
+
+            type() {
+                const current = this.wordIndex % this.words.length;
+                const fullTxt = this.words[current];
+
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+                let typeSpeed = 110;
+
+                if (this.isDeleting) {
+                    typeSpeed /= 2;
+                }
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    typeSpeed = this.wait;
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === "") {
+                    this.isDeleting = false;
+                    this.wordIndex++;
+                    typeSpeed = 20;
+                }
+
+                setTimeout(() => this.type(), typeSpeed);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", init);
+
+        function init() {
+            const txtElement = document.querySelector(".txt-type");
+            const words = JSON.parse(txtElement.getAttribute("data-words"));
+            const wait = txtElement.getAttribute("data-wait");
+            new TypeWriter(txtElement, words, wait);
+        }
+
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 1) {
+                    $('.arrow').addClass('fade');
+                } else {
+                    $('.arrow').removeClass('fade');
+                }
+            })
+        });
+
+
+    </script>
+</body>
+</html>
