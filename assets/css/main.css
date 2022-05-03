@@ -3,12 +3,38 @@
     padding: 0;
 }
 body {
-    font-family: "Source Sans Pro", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: samsung_sharp_sansregular;
     font-weight: 300;
     color: #414f57;
     font-size: 17.5px;
 }
 
+@font-face {
+    font-family: 'samsung_sharp_sansregular';
+    src: url('samsungsharpsans-webfont.woff2') format('woff2'), url('samsungsharpsans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'samsung_sharp_sansbold';
+    src: url('samsungsharpsans-bold-webfont.woff2') format('woff2'), url('samsungsharpsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'samsung_sharp_sansmedium';
+    src: url('samsungsharpsans-medium-webfont.woff2') format('woff2'), url('samsungsharpsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 a {
     cursor: pointer;
@@ -71,8 +97,8 @@ header ul a.learnMore:hover {
 }
 
 .logo {
-    width: 271.1111111111111px;
-    height: 60px;
+    width: 248.65461847389558232931726907631px;
+    height: 35px;
     margin-top: -5px;
 }
 
@@ -95,19 +121,14 @@ header ul a.learnMore:hover {
         padding-top: 425px;
     }
     header h1 {
-        font-size: 5px;
+        font-size: 38px;
         line-height: 50px;
-    }
-    .logo {
-        width: 225.92592592592px;
-        height: 50px;
-        margin-top: -5px;
     }
 }
 @media only screen and (max-width: 395px) {
     header h1 {
-        text-align: center;
-        font-size: 30px;
+        text-align: left;
+        font-size: 36px;
         line-height: 40px;
     }
     header ul {
@@ -138,7 +159,7 @@ header ul a.learnMore:hover {
 nav {
     position: fixed;
     top: 0;
-    height: 75px;
+    height: 50px;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -168,7 +189,7 @@ nav ul {
 }
 nav ul a {
     font-size: 17.5px;
-    line-height: 50px;
+    line-height: 20px;
     margin: 0 12.5px;
 }
 
@@ -190,8 +211,8 @@ nav button.menuButton {
     float: right;
     border: none;
     background-color: transparent;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     box-sizing: border-box;
     padding: 2.5px;
     outline: none;
@@ -273,20 +294,16 @@ nav button.menuButton svg.closeIcon {
 }
 @media only screen and (max-width: 500px) {
     nav {
-        height: 65px;
+        height: 50px;
     }
     nav a.brandName {
         font-size: 40px;
-    }
-    nav button.menuButton {
-        height: 40px;
-        width: 40px;
     }
     body.activeNavLinks nav ul {
         margin-top: calc(((100vh - 280px - 65px) / 2));
     }
     body.activeNavLinks nav ul a {
-        height: 60px;
+        height: 35px;
         font-size: 25px;
     }
 }
@@ -412,8 +429,8 @@ div.row div.col {
     bottom: 50px;
     left: 50%;
     margin-left: -20px;
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAGNe9CgcGtbOytLe2f5VrjfCKAAADsElEQVR4AezBgQAAAACAoP2pF6kCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDZpRvTiIEYiMLkzivb65/Xf7eBLSFkYAQzDUjwvS6rZ3N9LduekvuffFOAq/+Xs+T+pABffzhL7p8CfP3FBdQB3gXEH45S+psXEP9VgM7fvoD4rwJ0/v4FxF9TQE1IAT38YZbcPwV4+YsLGBNSQB9/mONf/XdIAZ38YR9y/xTg678KkPunAF//VYDcPwU4+IsLGDekgI7+cA+5fwow8hcUsPxTgLG/uIBxQQro6w/XEPinABd/bQHLPwUY+6sLeCEFdPeH989Hfj4poL//55ddOqgCAIQBKKT9S5vB294+GeAeA/gbwN8A/gbwN4C/AfwN4G8AfwP4G8DfAP4G8DeAvwH8DeBvAH8D+BvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gbM9DeAvwH8DeBvAH8D+BvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gbwN4C/AfwN4G8AfwP4G8DfAP4G8DeAvwH8DeBvAH8D+BvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gbwN4C/AfwN4G8AfwP4G8DfAP4G8DeAvwH8DeBvAP//AfwN4G8AfwP4G8DfAP4G8DeAvwH8DeBvAH8D+BvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gbwN4C/AfwN4G8AfwP4G8DfAP4G8DeAvwH8DeBvAH8D+BvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gbwN4C/AfwN4G8AfwPm+hvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gbwN4C/AfwN4G8AfwP4G8DfAP4G8DeAvwH8DeBvAH8D+BvA34Bd/gbwN4C/AfwN4G8AfwP4G8DfAP4G8DeAvwH8DeBvQMXfAP4G8DeAvwH8DeBvQNPfAP4G8Deg7G8AfwPa/gbE/Q2I+xvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gYs8DeAvwH8DeBvAH8D+BvA3wD+BvA3gL8B/A3gbwB/A/gbwN8A/gbs9zeAvwH8DeBvAH8D+BvA3wD+BvT8DeBvAH8D+BvQ9TeAvwFtfwPi/gbwf+3BsQAAAADAIH/rYeypAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAUHBYk13Z7LTsAAAAASUVORK5CYII=);
     background-size: contain;
 }
@@ -431,31 +448,30 @@ div.row div.col {
 
 
 /* About Section CSS */
-section#about {
+section#aboutSection {
     padding: 150px 20px 100px 20px;
-
+    background-color: rgb(200,200,200);
 }
 
 #about {
     text-align: left;
     padding-left: 35%;
     width: 65%;
-
 }
 
 #about p {
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    color: black;
+    font-family: samsung_sharp_sansregular;
+    font-size: 20px;
 }
 
 #about a {
     /*height: 55px;*/
-    font-size: 24px;
+    font-size: 20px;
     /*padding: 0 15px;*/
     text-decoration: none;
     /*line-height: 53px;*/
-    color: #fff;
+    color: black;
     /*font-weight: 500;
     display: inline-block;*/
     cursor: pointer;
@@ -630,10 +646,11 @@ section#contact a:hover{
 .contactUs{
     float: left;
     width: 300px;
+    margin-right: 200px;
 }
 
 .contactUs li{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: samsung_sharp_sansregular;
     font-size: 18px;
 }
 
@@ -642,7 +659,7 @@ section#contact a:hover{
 .contactTitle {
     width: 90%;
     display: inline-block;
-    font-family: 'Segoe UI' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: samsung_sharp_sansregular;
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: bold;
@@ -652,7 +669,7 @@ section#contact a:hover{
 .contactDetails {
     width: 90%;
     display: inline-block;
-    font-family: 'Segoe UI' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: samsung_sharp_sansregular;
     margin-bottom: 35px;
     font-size: 18px;
     font-weight: normal;
@@ -662,7 +679,7 @@ section#contact a:hover{
 .contactFormTitle {
     width: 90%;
     display: inline-block;
-    font-family: 'Segoe UI' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: samsung_sharp_sansregular;
     margin-bottom: 25px;
     font-size: 24px;
     font-weight: bold;
