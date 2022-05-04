@@ -17,16 +17,12 @@ body {
 }
 
 
-
-
 @font-face {
     font-family: 'samsung_sharp_sansbold';
     src: url('samsungsharpsans-bold-webfont.woff2') format('woff2'), url('samsungsharpsans-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-
 
 
 @font-face {
@@ -96,9 +92,9 @@ header ul a.learnMore:hover {
     border-color: #fff;
 }
 
-.logo {
-    width: 248.65461847389558232931726907631px;
-    height: 35px;
+#logo {
+    width: 280px;
+    height: 40px;
     margin-top: -5px;
 }
 
@@ -154,7 +150,7 @@ header ul a.learnMore:hover {
 nav {
     position: fixed;
     top: 0;
-    height: 50px;
+    height: 65px;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -289,7 +285,7 @@ nav button.menuButton svg.closeIcon {
 }
 @media only screen and (max-width: 500px) {
     nav {
-        height: 50px;
+        height: 65px;
     }
     nav a.brandName {
         font-size: 40px;

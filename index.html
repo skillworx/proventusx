@@ -13,7 +13,8 @@
 <body>
 
     <nav>
-        <a href="index.html"> <img class="logo" src="./assets/img/companyLogo.png"> </a>
+        <a href="index.html"> <img id="logo" src="./assets/img/companyLogo.png"> </a>
+
         <button class="menuButton">
             <svg class="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
             <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" /></svg>
@@ -122,9 +123,22 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script>
+
+        $(document).ready(function () {
+            $("#logo").hover(
+                function () {
+                    $(this).attr("src", "./assets/img/I-O.gif");
+                },
+                function () {
+                    $(this).attr("src", "./assets/img/companyLogo.png");
+                }
+            );
+        });
+
+
         //show hide company logo
-        var initialSrc = "./assets/img/companyLogo.png";
-        var scrollSrc = "./assets/img/companyLogoNav.png";
+        var initialSrc;
+        var scrollSrc;
 
         $(window).scroll(function () {
             var value = $(this).scrollTop();
