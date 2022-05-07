@@ -6,7 +6,7 @@ body {
     font-family: samsung_sharp_sansregular;
     font-weight: 300;
     color: #414f57;
-    font-size: 17.5px;
+    font-size: 16px;
 }
 
 @font-face {
@@ -35,6 +35,20 @@ body {
 a {
     cursor: pointer;
 }
+
+.js-slidein {
+    opacity: 0;
+    transform: translateY(30px);
+    transform: translateX(20px);
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.js-slidein-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
 
 /* Header CSS */
 header {
@@ -92,12 +106,6 @@ header ul a.learnMore:hover {
     border-color: #fff;
 }
 
-#logo {
-    width: 280px;
-    height: 40px;
-    margin-top: -5px;
-}
-
 @media only screen and (max-width: 875px) {
     header {
         padding: 75px;
@@ -120,6 +128,8 @@ header ul a.learnMore:hover {
         font-size: 38px;
         line-height: 50px;
     }
+
+
 }
 @media only screen and (max-width: 395px) {
     header h1 {
@@ -150,7 +160,7 @@ header ul a.learnMore:hover {
 nav {
     position: fixed;
     top: 0;
-    height: 65px;
+    height: 50px;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -158,6 +168,7 @@ nav {
     box-sizing: border-box;
     padding: 12.5px 100px;
     transition: background-color 0.1s;
+    z-index: 1;
 }
 nav a {
     color: rgba(255, 255, 255, 0.55);
@@ -172,6 +183,7 @@ nav a.brandName {
     float: left;
     font-size: 50px;
     line-height: 1;
+
 }
 
 nav ul {
@@ -208,6 +220,7 @@ nav button.menuButton {
     padding: 2.5px;
     outline: none;
     cursor: pointer;
+    margin-top: -5px;
 }
 nav button.menuButton svg {
     height: 100%;
@@ -232,6 +245,12 @@ nav button.menuButton svg.menuIcon {
 }
 nav button.menuButton svg.closeIcon {
     display: none;
+}
+
+#logo {
+    width: 280px;
+    height: 40px;
+    margin-top: -10px;
 }
 
 @media only screen and (max-width: 925px) {
@@ -285,7 +304,7 @@ nav button.menuButton svg.closeIcon {
 }
 @media only screen and (max-width: 500px) {
     nav {
-        height: 65px;
+        height: 50px;
     }
     nav a.brandName {
         font-size: 40px;
@@ -296,6 +315,12 @@ nav button.menuButton svg.closeIcon {
     body.activeNavLinks nav ul a {
         height: 35px;
         font-size: 25px;
+    }
+
+    #logo{
+        width: 210px;
+        height: 30px;
+        margin-top: -5px;
     }
 }
 
@@ -440,35 +465,68 @@ div.row div.col {
 
 /* About Section CSS */
 section#aboutSection {
-    padding: 150px 20px 100px 20px;
-    background-color: rgb(200,200,200);
+    padding: 50px 20px 100px 20px;
+    background-color: rgb(240,240,240);
 }
 
 #about {
     text-align: left;
-    padding-left: 35%;
+    padding-left: 25%;
     width: 65%;
 }
 
 #about p {
-    color: black;
+    color: #3c3c3c;
     font-family: samsung_sharp_sansregular;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #about a {
-    /*height: 55px;*/
-    font-size: 20px;
-    /*padding: 0 15px;*/
+    font-size: 18px;
     text-decoration: none;
-    /*line-height: 53px;*/
-    color: black;
-    /*font-weight: 500;
-    display: inline-block;*/
+    color: #3c3c3c;
     cursor: pointer;
-    /*border: 1px solid #c7cbd4;*/
     transition: border-color 0.25s ease-in-out,color 0.25s ease-in-out;
 }
+
+.sectionHeaders {
+    font-size: 30px; 
+    line-height: 50px; 
+    font-weight: 600; 
+}
+
+.infoTitles {
+    font-weight: bold;
+    color: white;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+
+    #about p {
+        font-size: 14px;
+    }
+
+    #about a{
+        font-size: 14px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact a {
+        font-size: 14px;
+    }
+
+    .sectionHeaders{
+        font-size: 20px;
+    }
+
+
+}
+
+
 #about a:hover{
     border-color: #D50106;
     color: #D50106;
@@ -519,71 +577,170 @@ section#aboutSection {
 
 /* vision Section CSS */
 section#vision {
-    padding: 75px 0;
-    text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/bgvisionSection.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 50px 20px 100px 20px;
+    text-align: left;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../img/repeatBackground.png);
+    background-repeat: repeat;
     background-attachment: fixed;
 }
-section#vision h1.headerLine {
-    color: white;
-}
-section#vision div.lineContainer div.line {
-    background-color: white;
-}
-section#vision div.row {
-    margin-top: 50px;
-}
-section#vision div.row div.col svg {
-    height: 90px;
-    width: 90px;
-    padding: 15px;
-}
-section#vision div.row div.col svg path {
-    fill: #D50106;
-    width: 100%;
-    height: 100%;
-}
-section#vision div.row div.col h1, section#vision div.row div.col p {
-    color: white;
-    font-size: 20px;
-    font-weight: 200;
-}
-section#vision div.row div.col h1 {
-    font-size: 40px;
-    line-height: 80px;
-    font-weight: 600;
-}
-@media only screen and (max-width: 906px) {
-    section#vision div.row div.col {
-        width: 70%;
-    }
-}
-@media only screen and (max-width: 816px) {
-    section#vision div.row div.col {
-        width: 70%;
-    }
+
+#visionDiv{
+    width: 90vw;
 }
 
-@media only screen and (max-width: 757px) {
-    section#vision div.lineContainer {
+section#vision h1 {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+section#vision p{
+    color: lightgray;
+    margin-left: 5%;
+}
+
+.infoTitles{
+    color: lightgray;
+}
+
+.infoRow {
+    overflow: auto;
+}
+
+.infoCol {
+    float: left;
+    height: 330px;
+    width: 450px;
+}
+
+#icons{
+    float: left;
+    margin-bottom: 240px;
+    margin-right: 20px;
+    margin-left: 15%;
+}
+
+
+@media only screen and (max-width: 999px) {
+
+    .infoCol {
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin-left: 0 !important;
         margin-bottom: 20px;
     }
 
-    section#vision div.row div.col {
-        width: 100%;
-        display: block;
-        margin-top: 70px;
+    #icons {
+        margin-left: 5%;
+        margin-bottom: 0;
+        margin-right: 30px;
+
     }
-    section#vision div.row div.col p {
-        width: 250px;
-        display: inline-block;
+
+
+}
+
+/*Marketing section CSS*/
+/* About Section CSS */
+section#marketing {
+    padding: 50px 20px 100px 20px;
+    background-color: rgb(240,240,240);
+}
+
+#marketingDiv {
+    text-align: left;
+    padding-left: 25%;
+    width: 65%;
+}
+
+#marketing p {
+    color: #3c3c3c;
+    font-family: samsung_sharp_sansregular;
+    font-size: 18px;
+}
+
+#marketing a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #979797;
+    cursor: pointer;
+    transition: border-color 0.25s ease-in-out,color 0.25s ease-in-out;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    #marketing p {
+        font-size: 14px;
+    }
+
+    #marketing a {
+        font-size: 14px;
+    }
+
+    #marketing p {
+        font-size: 14px;
+    }
+
+    #marketing a {
+        font-size: 14px;
+    }
+
+    .sectionHeaders {
+        font-size: 20px;
     }
 }
 
 
+#marketing a:hover {
+    border-color: #D50106;
+    color: #D50106;
+}
+
+@media only screen and (max-width: 1400px) {
+    #marketingDiv {
+        padding-left: 35%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #marketingDiv {
+        padding-left: 30%;
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #marketingDiv {
+        padding-left: 25%;
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    #marketingDiv {
+        padding-left: 15%;
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #marketingDiv {
+        padding-left: 5%;
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #marketingDiv {
+        padding-left: 5%;
+        width: 85%;
+    }
+}
 
 /* Contact Section CSS */
 section#contact {
@@ -672,7 +829,7 @@ section#contact a:hover{
     display: inline-block;
     font-family: samsung_sharp_sansregular;
     margin-bottom: 25px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: #D50106;
     text-align: center;
@@ -681,11 +838,11 @@ section#contact a:hover{
 form {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     max-width: 600px;
     border-radius: 10px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 @media only screen and (max-width: 1000px){
@@ -768,7 +925,7 @@ footer {
     overflow: auto;
 }
 footer p.copyright {
-    font-size: 20px;
+    font-size: 18px;
     color: #414f57;
     display: block;
     float: left;
