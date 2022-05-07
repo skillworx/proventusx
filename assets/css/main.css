@@ -253,12 +253,12 @@ nav button.menuButton svg.closeIcon {
     margin-top: -10px;
 }
 
-@media only screen and (max-width: 925px) {
+@media only screen and (max-width: 1200px) {
     nav {
         padding: 12.5px 25px;
     }
 }
-@media only screen and (max-width: 755px) {
+@media only screen and (max-width: 1050px) {
     nav {
         padding: 12.5px;
     }
@@ -608,13 +608,13 @@ section#vision p{
 
 .infoCol {
     float: left;
-    height: 330px;
+    height: 340px;
     width: 450px;
 }
 
 #icons{
     float: left;
-    margin-bottom: 240px;
+    margin-bottom: 250px;
     margin-right: 20px;
     margin-left: 15%;
 }
