@@ -181,7 +181,6 @@ nav a:hover {
 nav a.brandName {
     display: block;
     float: left;
-    font-size: 50px;
     line-height: 1;
 
 }
@@ -490,8 +489,9 @@ section#aboutSection {
 }
 
 .sectionHeaders {
+    margin-bottom: 30px;
     font-size: 30px; 
-    line-height: 50px; 
+    line-height: 30px; 
     font-weight: 600; 
 }
 
@@ -521,6 +521,14 @@ section#aboutSection {
 
     .sectionHeaders{
         font-size: 20px;
+    }
+
+    #vision p {
+        font-size: 14px;
+    }
+
+    #vision a{
+        font-size: 14px;
     }
 
 
@@ -577,10 +585,9 @@ section#aboutSection {
 
 /* vision Section CSS */
 section#vision {
-    padding: 50px 20px 100px 20px;
+    padding: 50px 20px 50px 20px;
     text-align: left;
     background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../img/repeatBackground.png);
-    background-repeat: repeat;
     background-attachment: fixed;
 }
 
@@ -588,14 +595,18 @@ section#vision {
     width: 90vw;
 }
 
+#visionIntro{
+    width: 60%;
+}
+
 section#vision h1 {
-    margin-left: 5%;
+    margin-left: 20%;
     color: lightgray;
 }
 
 section#vision p{
     color: lightgray;
-    margin-left: 5%;
+    margin-left: 20%;
 }
 
 .infoTitles{
@@ -609,14 +620,29 @@ section#vision p{
 .infoCol {
     float: left;
     height: 340px;
-    width: 450px;
+    width: 650px;
 }
 
 #icons{
     float: left;
     margin-bottom: 250px;
     margin-right: 20px;
-    margin-left: 15%;
+    margin-left: 35%;
+}
+
+@media only screen and (max-width: 1445px) {
+
+    #icons {
+        margin-left: 10%;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .infoCol {
+        width: 450px;
+
+
+    }
 }
 
 
@@ -629,6 +655,7 @@ section#vision p{
         height: 100% !important;
         margin-left: 0 !important;
         margin-bottom: 20px;
+
     }
 
     #icons {
@@ -636,6 +663,10 @@ section#vision p{
         margin-bottom: 0;
         margin-right: 30px;
 
+    }
+
+    #visionIntro {
+        width: 90%;
     }
 
 
@@ -667,9 +698,6 @@ section#marketing {
     cursor: pointer;
     transition: border-color 0.25s ease-in-out,color 0.25s ease-in-out;
 }
-
-
-
 
 @media only screen and (max-width: 500px) {
 
@@ -742,19 +770,80 @@ section#marketing {
     }
 }
 
+/*infinity carousel CSS*/
+
+section#projects {
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    background-color: white;
+
+}
+
+section#projects h1 {
+    margin-left: 5%;
+    color: black;
+}
+
+.blocks {
+    overflow: hidden;
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.animation {
+    width: auto;
+    height: 50px;
+    font-size: 0px;
+}
+
+.animation div {
+    display: inline-block;
+    width: auto;
+    float: none;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .blocks {
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .blocks {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .blocks {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .blocks {
+        width: 200px;
+    }
+}
+
 /* Contact Section CSS */
 section#contact {
     padding: 75px 0;
     padding-left: 5%;
     overflow: auto;
     text-align: left;
-    background-color: #f5f5f5;
 }
-section#contact p.desc {
-    width: 500px;
-    display: inline-block;
-    margin: auto;
-}
+    section#contact p.desc {
+        padding: 50px 20px 100px 20px;
+        text-align: left;
+        background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../img/repeatBackground.png);
+        background-repeat: repeat;
+        background-attachment: fixed;
+        width: 500px;
+        display: inline-block;
+        margin: auto;
+    }
 
 section#contact ul {
     display: block;
@@ -831,7 +920,6 @@ section#contact a:hover{
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: bold;
-    color: #D50106;
     text-align: center;
 }
 
@@ -920,9 +1008,10 @@ form button {
 
 /* Footer CSS */
 footer {
-    padding: 65px 0;
+    padding: 45px 0;
     text-align: center;
     overflow: auto;
+    background-color: rgb(240,240,240);
 }
 footer p.copyright {
     font-size: 18px;
