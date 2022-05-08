@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: samsung_sharp_sansregular;
     font-weight: 300;
     color: #414f57;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 @font-face {
@@ -63,97 +64,105 @@ header {
     box-sizing: border-box;
     padding-left: 100px;
 }
-header h1 {
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 80px;
-    margin-bottom: 30px;
-}
-header ul {
-    height: 50px;
-}
-header ul a {
-    height: 55px;
-    font-size: 25px;
-    padding: 0 15px;
-    text-decoration: none;
-    line-height: 53px;
-    color: #fff;
-}
 
-header ul a.download {
-    display: inline-block;
-    cursor: pointer;
-    border: 1px solid #D50106;
-    background-color: #D50106;
-    transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
-    margin-right: 10px;
-}
-header ul a.download:hover {
-    background-color: #2155ff;
-    border-color: #2155ff;
-}
+    header h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 80px;
+        margin-bottom: 30px;
+    }
 
-header ul a.learnMore {
-    display: inline-block;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    transition: background-color 0.25s ease-in-out,border-color 0.25s ease-in-out,color 0.25s ease-in-out;
-}
-header ul a.learnMore:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: #fff;
-}
+    header ul {
+        height: 50px;
+    }
+
+        header ul a {
+            height: 55px;
+            font-size: 25px;
+            padding: 0 15px;
+            text-decoration: none;
+            line-height: 53px;
+            color: #fff;
+        }
+
+            header ul a.download {
+                display: inline-block;
+                cursor: pointer;
+                border: 1px solid #D50106;
+                background-color: #D50106;
+                transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+                margin-right: 10px;
+            }
+
+                header ul a.download:hover {
+                    background-color: #2155ff;
+                    border-color: #2155ff;
+                }
+
+            header ul a.learnMore {
+                display: inline-block;
+                cursor: pointer;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                transition: background-color 0.25s ease-in-out,border-color 0.25s ease-in-out,color 0.25s ease-in-out;
+            }
+
+                header ul a.learnMore:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border-color: #fff;
+                }
 
 @media only screen and (max-width: 875px) {
     header {
         padding: 75px;
-        padding-top: 450px;
+        padding-top: 400px;
     }
 }
+
 @media only screen and (max-width: 800px) {
     header h1 {
-        font-size: 45px;
+        font-size: 40px;
         line-height: 65px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     header {
         padding: 12.5px;
-        padding-top: 425px;
+        padding-top: 350px;
     }
+
     header h1 {
         font-size: 38px;
         line-height: 50px;
     }
-
-
 }
+
 @media only screen and (max-width: 395px) {
     header h1 {
         text-align: left;
-        font-size: 36px;
+        font-size: 32px;
         line-height: 40px;
     }
+
     header ul {
         margin-top: 330px;
         text-align: center;
     }
-    header ul a {
-        width: 70%;
-        box-sizing: border-box;
-        height: 75px;
-        font-size: 20px;
-        text-decoration: none;
-        line-height: 43px;
-    }
-    header ul a.download {
-        margin: 0;
-        margin-bottom: 20px;
-    }
 
+        header ul a {
+            width: 70%;
+            box-sizing: border-box;
+            height: 75px;
+            font-size: 20px;
+            text-decoration: none;
+            line-height: 43px;
+        }
+
+            header ul a.download {
+                margin: 0;
+                margin-bottom: 20px;
+            }
 }
 
 /* Nav CSS */
@@ -170,81 +179,94 @@ nav {
     transition: background-color 0.1s;
     z-index: 1;
 }
-nav a {
-    color: rgba(255, 255, 255, 0.55);
-    transition: color 0.15s ease-in-out;
-    text-decoration: none;
-}
-nav a:hover {
-    color: #fff;
-}
-nav a.brandName {
-    display: block;
-    float: left;
-    line-height: 1;
 
-}
+    nav a {
+        color: rgba(255, 255, 255, 0.55);
+        transition: color 0.15s ease-in-out;
+        text-decoration: none;
+    }
 
-nav ul {
-    float: right;
-    height: 50px;
-}
-nav ul a {
-    font-size: 17.5px;
-    line-height: 20px;
-    margin: 0 12.5px;
-}
+        nav a:hover {
+            color: #fff;
+        }
 
-nav.nonTopNav {
-    background-color: #fff;
-    box-shadow: 0 0 3vh black;
-}
-nav.nonTopNav a.brandName {
-    color: #D50106;
-}
-nav.nonTopNav a {
-    color: #414f57;
-}
-nav.nonTopNav a:hover {
-    color: #D50106;
-}
-nav button.menuButton {
-    display: none;
-    float: right;
-    border: none;
-    background-color: transparent;
-    height: 35px;
-    width: 35px;
-    box-sizing: border-box;
-    padding: 2.5px;
-    outline: none;
-    cursor: pointer;
-    margin-top: -5px;
-}
-nav button.menuButton svg {
-    height: 100%;
-    width: 100%;
-}
-nav button.menuButton svg path {
-    transition: fill 0.15s ease-in-out;
-    fill: rgba(255, 255, 255, 0.55);
-}
-nav button.menuButton:hover svg path {
-    fill: #fff;
-}
-nav.nonTopNav button.menuButton svg path {
-    fill: #414f57;
-}
-nav.nonTopNav button.menuButton:hover svg path {
-    fill: #D50106;
-}
+        nav a.brandName {
+            display: block;
+            float: left;
+            line-height: 1;
+        }
 
-nav button.menuButton svg.menuIcon {
-    display: block;
-}
-nav button.menuButton svg.closeIcon {
-    display: none;
-}
+    nav ul {
+        float: right;
+        height: 50px;
+    }
+
+        nav ul a {
+            font-size: 17.5px;
+            line-height: 20px;
+            margin: 0 12.5px;
+        }
+
+    nav.nonTopNav {
+        background-color: #fff;
+        box-shadow: 0 0 3vh black;
+    }
+
+        nav.nonTopNav a.brandName {
+            color: #D50106;
+        }
+
+        nav.nonTopNav a {
+            color: #414f57;
+        }
+
+            nav.nonTopNav a:hover {
+                color: #D50106;
+            }
+
+    nav button.menuButton {
+        display: none;
+        float: right;
+        border: none;
+        background-color: transparent;
+        height: 35px;
+        width: 35px;
+        box-sizing: border-box;
+        padding: 2.5px;
+        outline: none;
+        cursor: pointer;
+        margin-top: -5px;
+    }
+
+        nav button.menuButton svg {
+            height: 100%;
+            width: 100%;
+        }
+
+            nav button.menuButton svg path {
+                transition: fill 0.15s ease-in-out;
+                fill: rgba(255, 255, 255, 0.55);
+            }
+
+        nav button.menuButton:hover svg path {
+            fill: #fff;
+        }
+
+    nav.nonTopNav button.menuButton svg path {
+        fill: #414f57;
+    }
+
+    nav.nonTopNav button.menuButton:hover svg path {
+        fill: #D50106;
+    }
+
+    nav button.menuButton svg.menuIcon {
+        display: block;
+    }
+
+    nav button.menuButton svg.closeIcon {
+        display: none;
+    }
 
 #logo {
     width: 280px;
@@ -257,16 +279,20 @@ nav button.menuButton svg.closeIcon {
         padding: 12.5px 25px;
     }
 }
+
 @media only screen and (max-width: 1050px) {
     nav {
         padding: 12.5px;
     }
+
     body.activeNavLinks {
         overflow: hidden;
     }
+
     nav button.menuButton {
         display: block !important;
     }
+
     body.activeNavLinks nav {
         box-shadow: none;
         background-color: black;
@@ -274,12 +300,15 @@ nav button.menuButton svg.closeIcon {
         width: 100%;
         transition: none;
     }
-    body.activeNavLinks nav.nonTopNav {
-        background-color: #fff;
-    }
+
+        body.activeNavLinks nav.nonTopNav {
+            background-color: #fff;
+        }
+
     nav ul {
         display: none;
     }
+
     body.activeNavLinks nav ul {
         display: block !important;
         clear: both;
@@ -288,35 +317,42 @@ nav button.menuButton svg.closeIcon {
         height: auto;
         margin-top: calc(((100vh - 280px - 75px) / 2));
     }
-    body.activeNavLinks nav ul a {
-        display: block;
-        text-align: center;
-        height: 70px;
-        font-size: 30px;
-    }
+
+        body.activeNavLinks nav ul a {
+            display: block;
+            text-align: center;
+            height: 70px;
+            font-size: 30px;
+        }
+
     body.activeNavLinks nav button.menuButton svg.menuIcon {
         display: none;
     }
+
     body.activeNavLinks nav button.menuButton svg.closeIcon {
         display: block;
     }
 }
+
 @media only screen and (max-width: 500px) {
     nav {
         height: 50px;
     }
-    nav a.brandName {
-        font-size: 40px;
-    }
+
+        nav a.brandName {
+            font-size: 40px;
+        }
+
     body.activeNavLinks nav ul {
         margin-top: calc(((100vh - 280px - 65px) / 2));
     }
-    body.activeNavLinks nav ul a {
-        height: 35px;
-        font-size: 25px;
-    }
 
-    #logo{
+        body.activeNavLinks nav ul a {
+            height: 35px;
+            font-size: 25px;
+        }
+
+    #logo {
         width: 210px;
         height: 30px;
         margin-top: -5px;
@@ -375,10 +411,11 @@ div.row {
     display: block;
     text-align: center;
 }
-div.row div.col {
-    width: 300px;
-    display: inline-block;
-}
+
+    div.row div.col {
+        width: 300px;
+        display: inline-block;
+    }
 
 
 
@@ -474,25 +511,25 @@ section#aboutSection {
     width: 65%;
 }
 
-#about p {
-    color: #3c3c3c;
-    font-family: samsung_sharp_sansregular;
-    font-size: 18px;
-}
+    #about p {
+        color: #3c3c3c;
+        font-family: samsung_sharp_sansregular;
+        font-size: 18px;
+    }
 
-#about a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #3c3c3c;
-    cursor: pointer;
-    transition: border-color 0.25s ease-in-out,color 0.25s ease-in-out;
-}
+    #about a {
+        font-size: 18px;
+        text-decoration: none;
+        color: #3c3c3c;
+        cursor: pointer;
+        transition: border-color 0.25s ease-in-out,color 0.25s ease-in-out;
+    }
 
 .sectionHeaders {
     margin-bottom: 30px;
-    font-size: 30px; 
-    line-height: 30px; 
-    font-weight: 600; 
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
 }
 
 .infoTitles {
@@ -501,41 +538,8 @@ section#aboutSection {
     margin-left: 5%;
 }
 
-@media only screen and (max-width: 500px) {
 
-    #about p {
-        font-size: 14px;
-    }
-
-    #about a{
-        font-size: 14px;
-    }
-
-    #contact p {
-        font-size: 14px;
-    }
-
-    #contact a {
-        font-size: 14px;
-    }
-
-    .sectionHeaders{
-        font-size: 20px;
-    }
-
-    #vision p {
-        font-size: 14px;
-    }
-
-    #vision a{
-        font-size: 14px;
-    }
-
-
-}
-
-
-#about a:hover{
+#about a:hover {
     border-color: #D50106;
     color: #D50106;
 }
@@ -566,14 +570,15 @@ section#aboutSection {
         padding-left: 15%;
         width: 65%;
     }
-
 }
+
 @media only screen and (max-width: 800px) {
     #about {
         padding-left: 5%;
         width: 70%;
     }
 }
+
 @media only screen and (max-width: 500px) {
     #about {
         padding-left: 5%;
@@ -585,32 +590,26 @@ section#aboutSection {
 
 /* vision Section CSS */
 section#vision {
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 50px 5%;
     text-align: left;
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../img/repeatBackground.png);
-    background-attachment: fixed;
 }
 
-#visionDiv{
+#visionDiv {
     width: 90vw;
 }
 
-#visionIntro{
+#visionIntro {
     width: 60%;
+    margin-left: 5%;
 }
 
-section#vision h1 {
-    margin-left: 20%;
-    color: lightgray;
+
+section#vision p {
+    color: black;
 }
 
-section#vision p{
-    color: lightgray;
-    margin-left: 20%;
-}
-
-.infoTitles{
-    color: lightgray;
+.infoTitles {
+    color: black;
 }
 
 .infoRow {
@@ -619,34 +618,31 @@ section#vision p{
 
 .infoCol {
     float: left;
-    height: 340px;
-    width: 650px;
+    height: 360px;
+    width: 700px;
 }
 
-#icons{
+#icons {
     float: left;
     margin-bottom: 250px;
     margin-right: 20px;
-    margin-left: 35%;
+    margin-left: 15%;
 }
 
-@media only screen and (max-width: 1445px) {
+@media only screen and (max-width: 1565px) {
 
     #icons {
         margin-left: 10%;
-        margin-bottom: 0;
-        margin-right: 20px;
     }
 
     .infoCol {
-        width: 450px;
-
-
+        width: 600px;
+        height: 350px;
     }
 }
 
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1340px) {
 
     .infoCol {
         float: none !important;
@@ -655,21 +651,22 @@ section#vision p{
         height: 100% !important;
         margin-left: 0 !important;
         margin-bottom: 20px;
+    }
 
+    .infoCol p{
+        margin-left: 80px;
     }
 
     #icons {
-        margin-left: 5%;
+        margin-left: 0px;
         margin-bottom: 0;
         margin-right: 30px;
-
     }
 
     #visionIntro {
         width: 90%;
+        margin-left: 0;
     }
-
-
 }
 
 /*Marketing section CSS*/
@@ -691,6 +688,10 @@ section#marketing {
     font-size: 18px;
 }
 
+#marketing h4{
+    font-size: 18px;
+}
+
 #marketing a {
     font-size: 18px;
     text-decoration: none;
@@ -701,25 +702,37 @@ section#marketing {
 
 @media only screen and (max-width: 500px) {
 
+    #about p{
+        font-size: 16px;
+    }
+
+    #about a{
+        font-size: 16px;
+    }
+
     #marketing p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #marketing a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    #marketing p {
-        font-size: 14px;
+    #vision p {
+        font-size: 16px;
     }
 
-    #marketing a {
-        font-size: 14px;
+    #vision a {
+        font-size: 16px;
+    }
+    #contact a {
+        font-size: 16px;
     }
 
     .sectionHeaders {
         font-size: 20px;
     }
+
 }
 
 
@@ -776,13 +789,12 @@ section#projects {
     padding: 20px 20px 20px 20px;
     text-align: left;
     background-color: white;
-
 }
 
-section#projects h1 {
-    margin-left: 5%;
-    color: black;
-}
+    section#projects h1 {
+        margin-left: 5%;
+        color: black;
+    }
 
 .blocks {
     overflow: hidden;
@@ -796,12 +808,12 @@ section#projects h1 {
     font-size: 0px;
 }
 
-.animation div {
-    display: inline-block;
-    width: auto;
-    float: none;
-    padding: 0 10px;
-}
+    .animation div {
+        display: inline-block;
+        width: auto;
+        float: none;
+        padding: 0 10px;
+    }
 
 @media only screen and (max-width: 1050px) {
     .blocks {
@@ -834,6 +846,7 @@ section#contact {
     overflow: auto;
     text-align: left;
 }
+
     section#contact p.desc {
         padding: 50px 20px 100px 20px;
         text-align: left;
@@ -845,30 +858,33 @@ section#contact {
         margin: auto;
     }
 
-section#contact ul {
-    display: block;
-    text-align: left;
-}
-section#contact ul li {
-    display: block;
-    margin: 0 25px;
-    margin-top: 5px;
-}
+    section#contact ul {
+        display: block;
+        text-align: left;
+    }
 
-section#contact ul li p {
-    text-align: left;
-    margin: auto;
-}
-section#contact a {
-    text-decoration: none;
-    transition: color 0.2s, border-color 0.2s;
-    cursor: pointer;
-    color: inherit;
-}
-section#contact a:hover{
-    border-color: #D50106;
-    color: #D50106;
-}
+        section#contact ul li {
+            display: block;
+            margin: 0 25px;
+            margin-top: 5px;
+        }
+
+            section#contact ul li p {
+                text-align: left;
+                margin: auto;
+            }
+
+    section#contact a {
+        text-decoration: none;
+        transition: color 0.2s, border-color 0.2s;
+        cursor: pointer;
+        color: inherit;
+    }
+
+        section#contact a:hover {
+            border-color: #D50106;
+            color: #D50106;
+        }
 
 @media only screen and (max-width: 500px) {
     section#contact p.desc {
@@ -876,19 +892,19 @@ section#contact a:hover{
     }
 }
 
-.separated{
+.separated {
     margin-left: 5%;
 }
 
-.contactUs{
+.contactUs {
     float: left;
     width: 300px;
     margin-right: 200px;
 }
 
-.contactUs li{
+.contactUs li {
     font-family: samsung_sharp_sansregular;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -913,6 +929,12 @@ section#contact a:hover{
     color: black;
 }
 
+@media only screen and (max-width: 500px) {
+    .contactDetails {
+        font-size: 16px;
+    }
+}
+
 .contactFormTitle {
     width: 90%;
     display: inline-block;
@@ -933,7 +955,7 @@ form {
     margin-left: 5%;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
     form {
         margin-right: 20%;
     }
@@ -989,8 +1011,8 @@ input:focus, select:focus, textarea:focus {
     color: #a9a9a9;
 }
 
-form select option{
-    margin:50px 0px 50px 0px;
+form select option {
+    margin: 50px 0px 50px 0px;
 }
 
 form button {
@@ -1013,6 +1035,7 @@ footer {
     overflow: auto;
     background-color: rgb(240,240,240);
 }
+
 footer p.copyright {
     font-size: 18px;
     color: #414f57;
